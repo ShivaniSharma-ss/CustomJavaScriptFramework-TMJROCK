@@ -192,7 +192,7 @@ Female <input type='radio' name='gender' id='fe' value='F'>&nbsp;&nbsp;&nbsp;
 
 ![Screenshot (623)](https://user-images.githubusercontent.com/69362478/124371238-69ec4480-dc9d-11eb-98fc-80e7d1b335dc.png)
 
-![Screenshot (632)](https://user-images.githubusercontent.com/69362478/124382708-75179280-dce6-11eb-97c3-6c27938cdd78.png)
+![Screenshot (633)](https://user-images.githubusercontent.com/69362478/124382841-0850c800-dce7-11eb-8a23-1d243cdb91f4.png)
 
 
 
@@ -233,6 +233,10 @@ window.addEventListener('load',populateDesignations);
 </select>
 </body>
 ````
+
+![Screenshot (632)](https://user-images.githubusercontent.com/69362478/124382708-75179280-dce6-11eb-97c3-6c27938cdd78.png)
+
+
 
 ### Creating accordian panel:
  code to write in between <body> tag
