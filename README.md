@@ -21,8 +21,10 @@ Accordian, Modal, fillComboBox etc.
 4) Then start the tomcat server and go to any browser and type localhost:8080/ProjectName/resourceFileName
 Example : localhost:8080/TMJRock/ModalExample.html
 
+
 # POST Type Request Example
 
+''''
 <body>
 <h1>Post type request Example</h1> 
 <label>First Name </label><br><input type='text' id='firstName'><br><br>
@@ -32,6 +34,12 @@ Example : localhost:8080/TMJRock/ModalExample.html
 <br>
 <div id='whatever'></div>
 </body>
+''''
+![Screenshot (627)](https://user-images.githubusercontent.com/69362478/124371134-7e7c0d00-dc9c-11eb-82d5-1f7c7558c4dd.png)
+
+Get Type Request Example
+
+
 
 
 
