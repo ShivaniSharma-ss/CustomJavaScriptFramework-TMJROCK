@@ -22,7 +22,42 @@ Accordian, Modal, fillComboBox etc.
 Example : localhost:8080/TMJRock/ModalExample.html
 
 
-# POST Type Request Example
+###  POST type request Example :
+
+````
+<script>
+function saveEnquiry()
+{
+var firstName=$$$("firstName").value();
+var lastName=$$$("lastName").value();
+var age=$$$("age").value();
+var customer={
+"firstName" : firstName,
+"lastName" :  lastName,
+"age" : age
+};
+var whatever=$$$("whatever");
+whatever.html("");
+$$$.ajax({
+"methodType":"POST",
+"url":"servletThree",
+"data":customer,
+"sendJSON":true,
+"success":function(responseData){
+var customer=JSON.parse(responseData);
+var a="First Name: "+customer.firstName+"<br>";
+a=a+"Last Name: "+customer.lastName+"<br>";
+a=a+"Age: "+customer.age;
+whatever.html(a);
+},
+"failure":function(){
+alert("Some problem");
+}
+});
+}
+</script>
+````
+
 ````
 <body>
 <h1>Post type request Example</h1> 
@@ -35,10 +70,138 @@ Example : localhost:8080/TMJRock/ModalExample.html
 </body>
 ````
 
+### Output : 
 
 ![Screenshot (627)](https://user-images.githubusercontent.com/69362478/124371134-7e7c0d00-dc9c-11eb-82d5-1f7c7558c4dd.png)
 
-Get Type Request Example
+### Get Type Request Example : 
+
+````
+<script>
+function getDesignation()
+{
+let titleSpan=$$$("title");
+titleSpan.html("");
+let code=$$$("code").value();
+$$$.ajax({
+"url":"servletTwo",
+"data":{
+"code":code
+},
+"methodType":"GET",
+"success":function(responseData){
+// code 
+},
+"failure":function(){
+//code
+}
+});
+}
+</script>
+````
+
+````
+<h1>GET Type request with data Example</h1>
+Enter code <input type='text' id='code'>
+<button type='button' onclick='getDesignation()'>Get Designation</button><br>
+<br>
+Title <span id='title'></span>
+<br>
+<a href='index.html'>Home</a>
+````
+### Output : 
+
+![Screenshot (626)](https://user-images.githubusercontent.com/69362478/124371218-27c30300-dc9d-11eb-81cf-e0f9896380d0.png)
+
+### Form validation:
+````
+<script>
+// TMJRock user script starts here
+function doSomething()
+{
+return $$$("someForm").isValid({
+"nm":{
+"required":true,
+"maxLength":20,
+"errorPane":"nmErrorSection",
+"errors":{
+"required":"Name required",
+"maxLength":"Name cannot exceed 20 characters"
+}
+},
+"ad":{
+"required":true,
+"errorPane":"adErrorSection",
+"errors":{
+"required":"Address required"
+}
+},
+"ct":{
+"invalid":-1,
+"errorPane":"ctErrorSection",
+"errors":{
+"invalid":"Select city"
+}
+},
+"gender":{
+"required":true,
+"errorPane":"genderErrorSection",
+"errors":{
+"required":"select gender"
+}
+},
+"agree":{
+"requiredState":true,
+"displayAlert":true,
+"errors":{
+"requiredState":"Select I agree checkbox"
+}
+}
+});
+}
+</script>
+````
+
+````
+<body>
+<h1>Form validation example</h1>
+<form id='someForm' onsubmit='return doSomething()'>
+<label>Name</label> <br><input type='text' name='nm' id='nm'> <span id='nmErrorSection'></span><br><br>
+<label>Address</label> <br><textarea id='ad' name='ad'></textarea> <span id='adErrorSection'></span><br><br>
+<label>Select city</label><br>
+<select id='ct' name='ct'>
+<option value='-1'>select city</option>
+<option value='1'>Ujjain</option>
+<option value='2'>Dewas</option>
+<option value='3'>Indore</option>
+</select>
+ <span id='ctErrorSection'></span><br>
+<br><br>
+<label>Gender &nbsp;&nbsp;&nbsp;</label><br>
+Male <input type='radio' name='gender' id='ml' value='M'>&nbsp;&nbsp;&nbsp;
+Female <input type='radio' name='gender' id='fe' value='F'>&nbsp;&nbsp;&nbsp;
+ <span id='genderErrorSection'></span>
+<br><br>
+<input type='checkbox' name='agree' id='ag' value='y'> I agree?
+<br><br>
+<button type='submit'>Registor</button>
+</form>
+</body>
+````
+### Output : 
+
+![Screenshot (623)](https://user-images.githubusercontent.com/69362478/124371238-69ec4480-dc9d-11eb-98fc-80e7d1b335dc.png)
+
+![Screenshot (624)](https://user-images.githubusercontent.com/69362478/124371241-74a6d980-dc9d-11eb-81fc-ddc98d2dca53.png)
+
+
+
+
+
+
+
+
+
 
 
 
