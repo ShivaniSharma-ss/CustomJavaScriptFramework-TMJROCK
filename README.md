@@ -192,7 +192,8 @@ Female <input type='radio' name='gender' id='fe' value='F'>&nbsp;&nbsp;&nbsp;
 
 ![Screenshot (623)](https://user-images.githubusercontent.com/69362478/124371238-69ec4480-dc9d-11eb-98fc-80e7d1b335dc.png)
 
-![Screenshot (624)](https://user-images.githubusercontent.com/69362478/124371241-74a6d980-dc9d-11eb-81fc-ddc98d2dca53.png)
+![Screenshot (632)](https://user-images.githubusercontent.com/69362478/124382708-75179280-dce6-11eb-97c3-6c27938cdd78.png)
+
 
 
 
