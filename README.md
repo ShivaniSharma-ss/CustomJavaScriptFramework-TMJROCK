@@ -309,9 +309,6 @@ window.addEventListener('load',populateDesignations);
 </div><br>
 </div>
  ````
-
- 
- 
  
  ### Creating accordian panel:
  code to write in between <body> tag
@@ -388,6 +385,9 @@ window.addEventListener('load',populateDesignations);
 </div><br>
 </div>
  ````
+ 
+ 
+ ![Screenshot (629)](https://user-images.githubusercontent.com/69362478/124382725-911b3400-dce6-11eb-8c9a-0e85291d5dff.png)
 
  
  
