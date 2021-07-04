@@ -18,7 +18,7 @@ Accordian, Modal, fillComboBox etc.
 <link rel="stylesheet" href="css/framework_style.css">
 ````
 3) Copy/cut web.xml to tomcat9/Webapps/"Project Name"/WEB-INF/.
-4) Then start the tomcat server and go to any browser and type localhost:8080/ProjectName/resourceFileName
+4) Then start the tomcat server and go to any browser and type localhost:8080/ProjectName/resourceFileName<br>
 Example : localhost:8080/TMJRock/ModalExample.html
 
 
